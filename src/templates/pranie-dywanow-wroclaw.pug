@@ -1,0 +1,130 @@
+extends settings/layout
+
+prepend html
+	- const lang = "uk";
+
+prepend head
+	- const pageTitle = "Pranie dywanów — czyszczenie i usuwanie plam | Wrocław i okolice | Cleantapi"
+	- const pageDescription = "Skuteczne pranie dywanów we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy brud, plamy, sierść i zapachy. Profesjonalny sprzęt i środki"
+	- const pageKeywords = "pranie dywanów Wrocław, czyszczenie dywanów Wrocław, usuwanie plam z dywanu Wrocław, pranie wykładzin Wrocław, czyszczenie dywanów z sierści Wrocław, odświeżanie dywanów Wrocław"
+	- const pageUrl = "pranie-dywanow-wroclaw.html"
+	- const pageImage = "img/service-carpet.jpg"
+	- const twitterImage = "img/service-carpet.jpg"
+	- const themeColor = "#ffffff"
+
+append head
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Strona główna",
+				"item": "https://cleantapi.pl/"
+				},
+				{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Pranie dywanów",
+				"item": "https://cleantapi.pl/pranie-dywanow-wroclaw.html"
+				}
+			]
+			},
+			{
+			"@type": "Service",
+			"name": "Pranie dywanów",
+			"serviceType": "Czyszczenie i pranie dywanów",
+			"description": "Profesjonalne pranie dywanów i wykładzin: usuwanie plam, brudu, sierści i zapachów. Obsługujemy Wrocław i okolice. Skutecznie i bezpiecznie.",
+			"areaServed": [
+				{ "@type": "City", "name": "Wrocław" },
+				{ "@type": "City", "name": "Jelcz-Laskowice" },
+				{ "@type": "City", "name": "Oleśnica" },
+				{ "@type": "City", "name": "Brzeg" },
+				{ "@type": "City", "name": "Oława" }
+			],
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "Cleantapi",
+				"url": "https://cleantapi.pl",
+				"telephone": "+48 575 256 496",
+				"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Wrocław",
+				"addressCountry": "PL"
+				}
+			},
+			"termsOfService": "https://cleantapi.pl/",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"servicePhone": {
+				"@type": "ContactPoint",
+				"telephone": "+48 575 256 496",
+				"contactType": "customer service",
+				"areaServed": "PL"
+				}
+			}
+			},
+			{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+				"@type": "Question",
+				"name": "Jakie dywany można czyścić?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Czyścimy dywany z wełny, syntetyczne, shaggy, perskie i wykładziny dywanowe. Dostosowujemy metodę do rodzaju włókna."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy można usunąć sierść i zapach zwierząt?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Usuwamy sierść oraz nieprzyjemne zapachy zwierząt domowych za pomocą specjalistycznych środków."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Jak długo schnie dywan po czyszczeniu?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Zwykle od 6 do 12 godzin. Czas zależy od grubości runa i warunków w pomieszczeniu."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy czyszczenie dywanów jest bezpieczne?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Stosujemy bezpieczne środki czyszczące, które są przyjazne dla dzieci, zwierząt i alergików."
+				}
+				}
+			]
+			}
+		]
+		}
+
+
+
+append content
+	script. 
+		const initialCategory = 2;
+	include components/header-2
+	main
+		include components/carpet/details
+		include components/price
+		include components/how
+		include components/reviews
+		include components/cta
+		include components/works
+		include components/faq
+		include components/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

@@ -1,0 +1,81 @@
+section#price.price.block.bg-white
+	.container
+		.row.g-4
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.price__title.text-uppercase.mb-0 Cennik
+					.col-auto(data-aos="fade-left")
+						a.btn.btn-third.btn-normal.btn-rhombus.w-100.text-center(href="tel:+48575256496") 
+							span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+							span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+							span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+							span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+							svg.icon.icon-right.shake(width="16" height="16")
+								use(href="#tel")
+							| Zadzwoń
+					.col-12(data-aos="fade-in") 
+						h3.price__subtitle.h6.text-light.mb-0 Wybierz kategorię i sprawdź ceny usług, których potrzebujesz
+			.col-12(data-aos="fade-in" data-aos-delay="100")
+				.categories-navigation
+					.categories-navigation-swiper
+						.swiper-button-next.categories-button-arrow
+						.swiper-button-prev.categories-button-arrow
+						.swiper-wrapper 
+							.swiper-slide
+								button.btn.btn-primary.btn-small.category-btn(type="button") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.category-btn__text Tapicerka meblowa
+							.swiper-slide
+								button.btn.btn-primary.btn-small.category-btn(type="button") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.category-btn__text Materace
+							.swiper-slide
+								button.btn.btn-primary.btn-small.category-btn(type="button") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.category-btn__text Dywany
+							.swiper-slide
+								button.btn.btn-primary.btn-small.category-btn(type="button") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.category-btn__text Okna
+							.swiper-slide
+								button.btn.btn-primary.btn-small.category-btn(type="button") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.category-btn__text Tapicerka samochodowa
+				.categories-content
+					.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+					.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+					div
+						svg.icon.icon-right(width="16", height="16")
+							use(href="#info")
+						| Minimalny koszt wyjazdu 130zł.
+					.swiper.categories-content-swiper
+						.swiper-wrapper 
+							.swiper-slide
+								include price/furniture
+							.swiper-slide
+								include price/mattress
+							.swiper-slide
+								include price/carpet
+							.swiper-slide
+								include price/window
+							.swiper-slide
+								include price/salon
+			.col-12
+				div.text-center 
+					svg.icon.icon-right(width="16", height="16")
+						use(href="#info")
+					small Niestety nie możemy gwarantować, że każda plama poszczególna zejdzie, oraz nie gwarantujemy, że każdy nieprzyjemny zapach zniknie.
+				div.text-center 
+					svg.icon.icon-right(width="16", height="16")
+						use(href="#info")
+					small Cennik jest orientacyjny. Dokładna kwota zależy od rodzaju materiału, stanu zabrudzenia, wielkości czyszczonego przedmiotu.
+				div.text-center 
+					svg.icon.icon-right(width="16" height="16")
+						use(href="#info")
+					small Również mamy dodatkową opcje suszenie waszych mebli, dywanów, materaców oraz suszenie foteli auta.

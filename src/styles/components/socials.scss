@@ -1,0 +1,13 @@
+.socials {
+    display: inline-block;
+    &__item {
+        text-decoration: none;
+        color: inherit;
+        padding: 0.25rem;
+        display: inline-block;
+        transition: all 400ms;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

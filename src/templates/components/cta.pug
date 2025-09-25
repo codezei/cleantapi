@@ -1,0 +1,68 @@
+section.cta#cta.bg.bg-dark
+	.container 
+		.row.flex-column-reverse.flex-lg-row.justify-content-center.gx-5.gy-0
+			.col-12.col-lg-8.align-self-center(data-aos="fade-right")
+				.block
+					form.cta__form#cta-form(method="POST")
+						.row.g-2 
+							.col-6 
+								.card.card-primary-outline.input-wrap
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									input.input.cta__input(type="text" placeholder="Imię" name="name", required)
+							.col-6 
+								.card.card-primary-outline.input-wrap
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									input.input.cta__input(type="tel" placeholder="Telefon" name="phone", required)
+							.col-12
+								.card.card-primary-outline.input-wrap
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.select-wrap
+										label(for="service") Wybierz jedną lub kilka usług (przytrzymaj Ctrl/⌘, aby zaznaczyć kilka)
+										select#service(name="service" required multiple).cta__input.input
+											option(value="Pranie tapicerki meblowej") Pranie tapicerki meblowej
+											option(value="Pranie materacy") Pranie materacy
+											option(value="Pranie dywanów") Pranie dywanów
+											option(value="Mycie okien") Mycie okien
+											option(value="Pranie tapicerki samochodowej") Pranie tapicerki samochodowej
+											option(value="Inne") Inne
+							.col-12 
+								.card.card-primary-outline.input-wrap
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									textarea.input.cta__input(placeholder="Wiadomość", name="message", rows="4")
+							.col-12 
+								button.btn.btn-primary-outline.btn-normal.btn-rhombus.cta__btn(type="submit") 
+									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									| Wyślij zgłoszenie
+			.col-12.col-lg-4
+				.mask
+					.triangle.triangle-135.top-inner.left-inner
+					.triangle.triangle-45.top-inner.right-inner
+					.triangle.triangle-225.bottom-inner.left-inner
+					.triangle.triangle-315.bottom-inner.right-inner
+					.triangle.triangle-45.top-inner.left-outer.offset-x-p
+					.triangle.triangle-315.bottom-inner.left-outer.offset-x-p.d-none.d-lg-block
+					.triangle.triangle-135.top-inner.right-outer.offset-x-p
+					.triangle.triangle-225.bottom-inner.right-outer.offset-x-p.d-none.d-lg-block
+					.triangle.triangle-315.triangle-fill.bottom-inner.right-inner.offset-x-n.d-lg-none.correction-y-n
+					.triangle.triangle-225.triangle-fill.bottom-inner.left-inner.offset-x-n.d-lg-none.correction-y-n
+					.line.line-v-100.top-inner.right-outer
+					.line.line-v-100.top-inner.left-outer
+					.line.line-h-100.bottom-inner.left-inner.d-lg-none.correction-y-n
+					.mask__inner(data-aos="fade-down" data-aos-delay="100")
+						h2.mask__title Skontaktuj się z nami
+						h3.h6.mask__subtitle.mb-0 Wypełnij formularz, a my skontaktujemy się z Tobą najszybciej jak to możliwe

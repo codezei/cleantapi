@@ -1,0 +1,125 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej i mycie okien — Wrocław"
+	- const themeColor = "#ffffff"
+	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej i mycie okien we Wrocławiu. Usuwamy plamy, kurz i zapachy"
+	- const pageKeywords = "pranie tapicerki meblowej Wrocław, pranie tapicerki Wrocław, czyszczenie mebli Wrocław, pranie materacy Wrocław, czyszczenie dywanów Wrocław, mycie okien Wrocław, pranie tapicerki samochodowej Wrocław"
+	- const pageUrl = "";
+	- const pageImage = "img/logo.png";
+	- const twitterImage = "img/logo.png";
+
+append head
+	link(rel="preload" as="image" href="img/promo-img-mob.webp" type="image/webp" media="(max-width: 575px)")
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Cleantapi",
+		"description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej oraz mycie okien we Wrocławiu, Jelcz-Laskowicach, Oleśnicy, Brzegu, Oławie i okolicach.",
+		"url": "https://cleantapi.pl",
+		"telephone": "+48 575 256 496",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Wrocław",
+			"addressCountry": "PL"
+		},
+		"areaServed": [
+			{
+			"@type": "Place",
+			"name": "Wrocław"
+			},
+			{
+			"@type": "Place",
+			"name": "Jelcz-Laskowice"
+			},
+			{
+			"@type": "Place",
+			"name": "Oleśnica"
+			},
+			{
+			"@type": "Place",
+			"name": "Brzeg"
+			},
+			{
+			"@type": "Place",
+			"name": "Oława"
+			}
+		],
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 51.1079,
+			"longitude": 17.0385
+		},
+		"openingHours": "Mo-Sa 07:00-22:00",
+		"priceRange": "PLN",
+		"image": "https://cleantapi.pl/logo.png",
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Nasze usługi",
+			"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+				"@type": "Service",
+				"name": "Pranie tapicerki meblowej"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+				"@type": "Service",
+				"name": "Pranie materacy"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+				"@type": "Service",
+				"name": "Czyszczenie dywanów"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+				"@type": "Service",
+				"name": "Pranie tapicerki samochodowej"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+				"@type": "Service",
+				"name": "Mycie okien"
+				}
+			}
+			]
+		}
+		}
+
+
+append content
+	script. 
+		const initialCategory = 0;
+	include components/header
+	main
+		include components/promo
+		include components/services
+		include components/about
+		include components/process
+		include components/why
+		include components/price
+		include components/how
+		include components/works
+		include components/cta
+		include components/reviews
+		include components/faq
+		include components/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

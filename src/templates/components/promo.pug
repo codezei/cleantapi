@@ -1,0 +1,42 @@
+section.promo#promo.bg.bg-dark
+	.container
+		.row.flex-column-reverse.flex-lg-row.gx-5.gy-0
+			.col-12.col-lg-8.align-self-center
+				.block 
+					.row.g-4.g-xl-5 
+						.col-12
+							h1.h2.promo__title.text-uppercase.mb-0 Pranie tapicerki meblowej, materacy, dywanów i tapicerki samochodowej, mycie okien we Wrocławiu
+						.col-12
+							.promo__subtitle.extractor 
+								.extractor__cleaner(data-aos="fade-left" data-aos-delay="100") 
+								h2.h5.text-light.extractor__text.mb-0(data-aos="fade-left" data-aos-delay="200") Skutecznie usuwamy brud, plamy i nieprzyjemne zapachy, korzystając z profesjonalnego sprzętu i starannie dobranej chemii
+						.col-12
+							.row.g-2.justify-content-center.justify-content-md-start 
+								include cta-buttons-2
+			.col-12.col-lg-4
+				.mask
+					.triangle.triangle-135.top-inner.left-inner
+					.triangle.triangle-45.top-inner.right-inner
+					.triangle.triangle-225.bottom-inner.left-inner
+					.triangle.triangle-315.bottom-inner.right-inner
+					.triangle.triangle-45.top-inner.left-outer.offset-x-p
+					.triangle.triangle-315.bottom-inner.left-outer.offset-x-p.d-none.d-lg-block
+					.triangle.triangle-135.top-inner.right-outer.offset-x-p
+					.triangle.triangle-225.bottom-inner.right-outer.offset-x-p.d-none.d-lg-block
+					.triangle.triangle-315.triangle-fill.bottom-inner.right-inner.offset-x-n.d-lg-none.correction-y-n
+					.triangle.triangle-225.triangle-fill.bottom-inner.left-inner.offset-x-n.d-lg-none.correction-y-n
+					.line.line-v-100.top-inner.right-outer
+					.line.line-v-100.top-inner.left-outer
+					.line.line-h-100.bottom-inner.left-inner.d-lg-none.correction-y-n
+					picture 
+						source(srcset="img/promo-img-mob.webp" type="image/webp" media="(max-width: 575px)")
+						source(srcset="img/promo-img-mob.jpg" media="(max-width: 575px)")
+						source(srcset="img/promo-img.webp" type="image/webp")
+						img.mask__img(src="img/promo-img.jpg" alt="")
+					.mask__inner
+						.text-center.text-light 
+							b.text-bold Obsługujemy miasta: 
+							br
+							span Wrocław, Jelcz-laskowice, Oleśnica, Brzeg, Oława, okolice
+							br
+							span Pon. - Sob. 7:00 - 22:00

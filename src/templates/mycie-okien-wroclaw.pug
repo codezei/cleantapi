@@ -1,0 +1,131 @@
+extends settings/layout
+
+prepend html
+	- const lang = "uk";
+
+prepend head
+	- const pageTitle = "Mycie okien — profesjonalne czyszczenie szyb i ram | Wrocław i okolice | Cleantapi"
+	- const pageDescription = "Oferujemy profesjonalne mycie okien we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Czyścimy szyby, ramy i parapety — bez smug i zacieków. Zadzwoń: +48 575 256 496."
+	- const pageKeywords = "mycie okien Wrocław, czyszczenie okien Wrocław, mycie szyb Wrocław, firma do mycia okien Wrocław, mycie okien bez smug Wrocław, mycie ram okiennych Wrocław"
+	- const pageUrl = "mycie-okien-wroclaw.html"
+	- const pageImage = "img/service-window.jpg"
+	- const twitterImage = "img/service-window.jpg"
+	- const themeColor = "#ffffff"
+
+
+append head
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Strona główna",
+				"item": "https://cleantapi.pl/"
+				},
+				{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Mycie okien",
+				"item": "https://cleantapi.pl/mycie-okien-wroclaw.html"
+				}
+			]
+			},
+			{
+			"@type": "Service",
+			"name": "Mycie okien",
+			"serviceType": "Mycie szyb, ram i parapetów",
+			"description": "Profesjonalne mycie okien we Wrocławiu i okolicach: szyby, ramy, parapety. Pracujemy szybko, dokładnie i bez smug.",
+			"areaServed": [
+				{ "@type": "City", "name": "Wrocław" },
+				{ "@type": "City", "name": "Jelcz-Laskowice" },
+				{ "@type": "City", "name": "Oleśnica" },
+				{ "@type": "City", "name": "Brzeg" },
+				{ "@type": "City", "name": "Oława" }
+			],
+			"provider": {
+				"@type": "LocalBusiness",
+				"name": "Cleantapi",
+				"url": "https://cleantapi.pl",
+				"telephone": "+48 575 256 496",
+				"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Wrocław",
+				"addressCountry": "PL"
+				}
+			},
+			"termsOfService": "https://cleantapi.pl/",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"servicePhone": {
+				"@type": "ContactPoint",
+				"telephone": "+48 575 256 496",
+				"contactType": "customer service",
+				"areaServed": "PL"
+				}
+			}
+			},
+			{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+				"@type": "Question",
+				"name": "Jakie okna myjecie?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Myjemy okna jednoskrzydłowe, dwuskrzydłowe, balkonowe, panoramiczne oraz okna w lokalach usługowych."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy mycie okien obejmuje także ramy i parapety?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. W ramach usługi myjemy nie tylko szyby, ale również ramy, uszczelki i parapety."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy używane środki są bezpieczne?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Używamy bezpiecznych i skutecznych środków, które nie zostawiają smug i są bezpieczne dla domowników."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy trzeba coś przygotować przed myciem okien?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Wystarczy usunąć z parapetów przedmioty dekoracyjne. Całą resztą zajmiemy się my."
+				}
+				}
+			]
+			}
+		]
+		}
+
+
+
+append content
+	script. 
+		const initialCategory = 3;
+	include components/header-2
+	main
+		include components/window/details
+		include components/price
+		include components/how
+		include components/reviews
+		include components/cta
+		include components/works
+		include components/faq
+		include components/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts
