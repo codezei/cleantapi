@@ -259,7 +259,6 @@ br {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  
   font-weight: 700;
   transition: background 400ms, color 800ms, transform 400ms;
   text-decoration: none;
@@ -441,7 +440,7 @@ br {
   }
 
   &-large {
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     font-size: 1.125rem;
   }
 
@@ -451,8 +450,22 @@ br {
   }
 
   &-small {
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
     font-size: 0.75rem;
+  }
+
+  @media screen and (max-width: 575px) {
+      &-large {
+        padding: 1rem 1.5rem;
+      }
+
+      &-normal {
+        padding: 0.75rem 1rem;
+      }
+
+      &-small {
+        padding: 0.5rem 0.75rem;
+      }
   }
 
 }
@@ -770,4 +783,8 @@ br {
 }
 .text-yellow {
   color: var(--second-color);
+}
+
+.beer-slider picture {
+  display: block;
 }

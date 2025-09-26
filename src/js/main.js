@@ -1,27 +1,28 @@
 
 import faq from './modules/faq'
 import works from './modules/works'
-import price from './modules/price'
 import header from './modules/header'
 import services from './modules/services'
 import reviews from './modules/reviews'
 import cta from './modules/cta'
-import why from './modules/why'
+import process from './modules/process'
 import accordion from './modules/accordion'
 import contacts from './modules/contacts'
+import categories from './modules/categories'
 import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function () {
-	faq()
+	
 	header()
 	services()
 	reviews()
 	cta()
 	works()
-	why()
+	process()
 	accordion()
-	price()
+	categories()
 	contacts()
+	faq()
 
 	AOS.init({
 		offset: 80,

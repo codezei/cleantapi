@@ -1,4 +1,4 @@
-export default function details() {
+export default function () {
   let detailsSwiperThumb = new Swiper(".details-swiper-thumb", {
     spaceBetween: 8,
     slidesPerView: 4,
