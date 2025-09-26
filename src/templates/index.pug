@@ -9,8 +9,8 @@ prepend head
 	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej i mycie okien we Wrocławiu. Usuwamy plamy, kurz i zapachy"
 	- const pageKeywords = "pranie tapicerki meblowej Wrocław, pranie tapicerki Wrocław, czyszczenie mebli Wrocław, pranie materacy Wrocław, czyszczenie dywanów Wrocław, mycie okien Wrocław, pranie tapicerki samochodowej Wrocław"
 	- const pageUrl = "";
-	- const pageImage = "img/logo.png";
-	- const twitterImage = "img/logo.png";
+	- const pageImage = "img/promo-img.webp";
+	- const twitterImage = "img/promo-img.webp";
 
 append head
 	link(rel="preload" as="image" href="img/promo-img-mob.webp" type="image/webp" media="(max-width: 575px)")
@@ -106,7 +106,7 @@ append content
 		const initialCategory = 0;
 	include components/header
 	main
-		include components/promo
+		include components/promo/promo-main
 		include components/services
 		include components/about
 		include components/process

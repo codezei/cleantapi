@@ -1,15 +1,15 @@
 extends settings/layout
 
 prepend html
-	- const lang = "uk";
+	- const lang = "pl";
 
 prepend head
 	- const pageTitle = "Mycie okien — profesjonalne czyszczenie szyb i ram | Wrocław i okolice | Cleantapi"
 	- const pageDescription = "Oferujemy profesjonalne mycie okien we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Czyścimy szyby, ramy i parapety — bez smug i zacieków. Zadzwoń: +48 575 256 496."
 	- const pageKeywords = "mycie okien Wrocław, czyszczenie okien Wrocław, mycie szyb Wrocław, firma do mycia okien Wrocław, mycie okien bez smug Wrocław, mycie ram okiennych Wrocław"
 	- const pageUrl = "mycie-okien-wroclaw.html"
-	- const pageImage = "img/service-window.jpg"
-	- const twitterImage = "img/service-window.jpg"
+	- const pageImage = "img/service-window.webp"
+	- const twitterImage = "img/service-window.webp"
 	- const themeColor = "#ffffff"
 
 
@@ -113,10 +113,10 @@ append head
 
 append content
 	script. 
-		const initialCategory = 3;
+		const initialCategory = 5;
 	include components/header-2
 	main
-		include components/window/details
+		include components/promo/promo-window
 		include components/price
 		include components/how
 		include components/reviews

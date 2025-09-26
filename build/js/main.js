@@ -452,7 +452,7 @@
                     for (_iterator.s(); !(_step = _iterator.n()).done;) {
                       _step$value = _slicedToArray(_step.value, 2), key = _step$value[0], value = _step$value[1];
 
-                      if (key === 'work') {
+                      if (key === 'service') {
                         work.push(value);
                       }
                     }
@@ -462,7 +462,7 @@
                     _iterator.f();
                   }
 
-                  formData.set('work', work.join('; '));
+                  formData.set('service', work.join('; '));
                   _context.prev = 6;
                   _context.next = 9;
                   return fetch('/telegram.php', {
@@ -569,29 +569,7 @@
     function contacts () {
       var map = document.querySelector(".contacts__iframe");
       var trigger = document.getElementById("map-load-trigger");
-
-      if ("IntersectionObserver" in window) {
-        var observer = new IntersectionObserver(function (entries, obs) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              // Создаём iframe через JS
-              var iframe = document.createElement("iframe");
-              iframe.className = "contacts__iframe";
-              iframe.src = map.dataset.src;
-              iframe.width = "640";
-              iframe.height = "480";
-              iframe.style.border = "0";
-              iframe.allowFullscreen = true;
-              iframe.name = "White Clean"; // Вставляем iframe в контейнер
-
-              map.replaceWith(iframe);
-              obs.unobserve(trigger);
-            }
-          });
-        });
-        observer.observe(trigger);
-      } else {
-        // Создаём iframe через JS
+      window.addEventListener('load', function () {
         var iframe = document.createElement("iframe");
         iframe.className = "contacts__iframe";
         iframe.src = map.dataset.src;
@@ -599,10 +577,37 @@
         iframe.height = "480";
         iframe.style.border = "0";
         iframe.allowFullscreen = true;
-        iframe.name = "White Clean"; // Вставляем iframe в контейнер
-
+        iframe.name = "CleanTapi";
         map.replaceWith(iframe);
-      }
+      }); // if ("IntersectionObserver" in window) {
+      //   const observer = new IntersectionObserver((entries, obs) => {
+      //     entries.forEach(entry => {
+      //       if (entry.isIntersecting) {
+      //         const iframe = document.createElement("iframe");
+      //         iframe.className = "contacts__iframe";
+      //         iframe.src = map.dataset.src;
+      //         iframe.width = "640";
+      //         iframe.height = "480";
+      //         iframe.style.border = "0";
+      //         iframe.allowFullscreen = true;
+      //         iframe.name = "CleanTapi";
+      //         map.replaceWith(iframe);
+      //         obs.unobserve(trigger);
+      //       }
+      //     });
+      //   });
+      //   observer.observe(trigger);
+      // } else {
+      //         const iframe = document.createElement("iframe");
+      //         iframe.className = "contacts__iframe";
+      //         iframe.src = map.dataset.src;
+      //         iframe.width = "640";
+      //         iframe.height = "480";
+      //         iframe.style.border = "0";
+      //         iframe.allowFullscreen = true;
+      //         iframe.name = "CleanTapi";
+      //         map.replaceWith(iframe);
+      // }
     }
 
     function createCommonjsModule(fn, module) {

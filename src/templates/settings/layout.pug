@@ -3,7 +3,7 @@ block html
   html(lang=lang)
     head
       block head
-        - const domain = "https://luxe-clean.pl/"
+        - const domain = "https://cleantapi.pl/"
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
@@ -32,8 +32,8 @@ block html
     body
       block content
       block scripts
-        script(src="js/swiper-bundle.min.js")
-        script(src="js/aos.js")
-        script(src="js/beer-slider.js")
-        script(src="js/lightgallery.min.js")
-        script(src="js/main.js")
+        script(defer src="js/swiper-bundle.min.js")
+        script(defer src="js/aos.js")
+        script(defer src="js/beer-slider.js")
+        script(defer src="js/lightgallery.min.js")
+        script(defer src="js/main.js")

@@ -1,15 +1,15 @@
 extends settings/layout
 
 prepend html
-	- const lang = "uk";
+	- const lang = "pl";
 
 prepend head
 	- const pageTitle = "Pranie dywanów — czyszczenie i usuwanie plam | Wrocław i okolice | Cleantapi"
 	- const pageDescription = "Skuteczne pranie dywanów we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy brud, plamy, sierść i zapachy. Profesjonalny sprzęt i środki"
 	- const pageKeywords = "pranie dywanów Wrocław, czyszczenie dywanów Wrocław, usuwanie plam z dywanu Wrocław, pranie wykładzin Wrocław, czyszczenie dywanów z sierści Wrocław, odświeżanie dywanów Wrocław"
 	- const pageUrl = "pranie-dywanow-wroclaw.html"
-	- const pageImage = "img/service-carpet.jpg"
-	- const twitterImage = "img/service-carpet.jpg"
+	- const pageImage = "img/service-carpet.webp"
+	- const twitterImage = "img/service-carpet.webp"
 	- const themeColor = "#ffffff"
 
 append head
@@ -115,7 +115,7 @@ append content
 		const initialCategory = 2;
 	include components/header-2
 	main
-		include components/carpet/details
+		include components/promo/promo-carpet
 		include components/price
 		include components/how
 		include components/reviews

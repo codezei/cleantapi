@@ -4,7 +4,7 @@ section.process#process-cleaning.block
 			.col-12
 				.row.align-items-center.justify-content-between.g-2
 					.col-auto(data-aos="fade-right")
-						h2.process__title.text-uppercase.mb-0 Proces prania tapicerki
+						h2.process__title.text-uppercase.mb-0 Proces prania
 					.col-auto(data-aos="fade-left")
 						a.btn.btn-third.btn-normal.btn-rhombus.w-100.text-center(href="tel:+48575256496") 
 							span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
@@ -16,126 +16,125 @@ section.process#process-cleaning.block
 							| Zadzwoń
 					.col-12(data-aos="fade-in")
 						h3.h6.process__subtitle.text-light.mb-0 Zobacz, jak wygląda cały proces czyszczenia tapicerki
-			.col-12.col-lg-6.col-xl-8.d-flex.flex-column(data-aos="fade-in") 
-				.categories-navigation
-					.categories-navigation-swiper 
-						.swiper-button-next.categories-button-arrow
-						.swiper-button-prev.categories-button-arrow
-						.swiper-wrapper 
-							.swiper-slide
-								button.btn.btn-primary.btn-small.category-btn(type="button") 
-									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-									span.category-btn__text Tapicerka meblowa
-							.swiper-slide
-								button.btn.btn-primary.btn-small.category-btn(type="button") 
-									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-									span.category-btn__text Materace
-							.swiper-slide
-								button.btn.btn-primary.btn-small.category-btn(type="button") 
-									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-									span.category-btn__text Dywany
-							.swiper-slide
-								button.btn.btn-primary.btn-small.category-btn(type="button") 
-									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-									span.category-btn__text Okna
-							.swiper-slide
-								button.btn.btn-primary.btn-small.category-btn(type="button") 
-									span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-									span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-									span.category-btn__text Tapicerka samochodowa
-				.categories-content.flex-grow-1.d-flex.align-items-center
-					.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-					.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-					.swiper.categories-content-swiper 
-						.swiper-wrapper 
-							.swiper-slide.h-auto
-								include before-after/furniture
-							.swiper-slide.h-auto
-								include before-after/mattress
-							.swiper-slide.h-auto
-								include before-after/carpet
-							.swiper-slide.h-auto
-								include before-after/window
-							.swiper-slide.h-auto
-								include before-after/salon
-			.col-12.col-lg-6.col-xl-4.p-relative.index-2(data-aos="fade-in") 
+			.col-12 
 				.row.g-2
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+					.col-12.col-lg-6.col-xl-8.d-flex.flex-column(data-aos="fade-in") 
+						.categories-navigation
+							.categories-navigation-swiper 
+								.swiper-button-next.categories-button-arrow
+								.swiper-button-prev.categories-button-arrow
+								.swiper-wrapper 
+									.swiper-slide
+										button.btn.btn-primary.btn-small.category-btn(type="button") 
+											span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+											span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+											span.category-btn__text Tapicerka meblowa
+									.swiper-slide
+										button.btn.btn-primary.btn-small.category-btn(type="button") 
+											span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+											span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+											span.category-btn__text Materace
+									.swiper-slide
+										button.btn.btn-primary.btn-small.category-btn(type="button") 
+											span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+											span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+											span.category-btn__text Dywany
+									//- .swiper-slide
+									//- 	button.btn.btn-primary.btn-small.category-btn(type="button") 
+									//- 		span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									//- 		span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									//- 		span.category-btn__text Okna
+									.swiper-slide
+										button.btn.btn-primary.btn-small.category-btn(type="button") 
+											span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+											span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+											span.category-btn__text Tapicerka samochodowa
+						.categories-content.flex-grow-1.d-flex.align-items-center
 							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
 							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon 
-									svg(width="48" height="48")
-										use(href="#dirt")
-								h4.h6.card__title.mb-0 1. Ocena stanu i identyfikacja zabrudzeń
-							//- .card__body Перед началом работ мы тщательно осматриваем мебель: определяем тип обивки, сложность пятен, источники запаха и материал наполнителя. Это позволяет подобрать оптимальную химию и метод чистки.
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon 
-									svg(width="48" height="48")
-										use(href="#smell")
-								h4.h6.card__title.mb-0 2. Usuwanie kurzu i przygotowanie na sucho
-							//- .card__body Специальным профессиональным пылесосом удаляются пыль, шерсть животных, крошки и другие сухие загрязнения, которые забиваются в поры ткани и мешают качественной чистке.
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon
-									svg(width="48" height="48")
-										use(href="#color")
-								h4.h6.card__title.mb-0 3. Naniesienie środka czyszczącego
-							//- .card__body Используем профессиональные средства, адаптированные под тип ткани. Формула подбирается индивидуально — против жировых пятен, биологических загрязнений, запахов и пролитых жидкостей.
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon 
-									svg(width="48" height="48")
-										use(href="#quality")
-								h4.h6.card__title.mb-0 4. Głębokie czyszczenie ekstrakcyjne
-							//- .card__body С помощью экстрактора (моющего пылесоса) раствор глубоко проникает в структуру ткани, растворяет грязь и тут же вытягивается вместе с загрязнениями. Это позволяет очистить даже те участки, которые не видны глазу.
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon 
-									svg(width="48" height="48")
-										use(href="#quality")
-								h4.h6.card__title.mb-0 5. Lokalne usuwanie uporczywych plam
-							//- .card__body Особо устойчивые пятна (вино, кофе, жир, чернила) обрабатываются отдельно специализированными пятновыводителями, не повреждающими структуру ткани.
-					.col-12.col-sm-6.col-xl-12
-						.card.card-primary-outline
-							.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
-							.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
-							.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
-							.card__header
-								.card__icon 
-									svg(width="48" height="48")
-										use(href="#quality")
-								h4.h6.card__title.mb-0 6. Suszenie i końcowa kontrola jakości
-							//- .card__body После чистки мебель остается лишь слегка влажной и быстро сохнет. Мы убеждаемся в качестве результата, при необходимости повторно обрабатываем проблемные зоны.
-			//- .col-12(data-aos="fade-in" data-aos-delay="200") 
-			//- 	.row.g-2.justify-content-center 
-			//- 		include cta-buttons
+							.swiper.categories-content-swiper 
+								.swiper-wrapper 
+									.swiper-slide.h-auto
+										include before-after/furniture
+									.swiper-slide.h-auto
+										include before-after/mattress
+									.swiper-slide.h-auto
+										include before-after/carpet
+									//- .swiper-slide.h-auto
+									//- 	include before-after/window
+									.swiper-slide.h-auto
+										include before-after/salon
+					.col-12.col-lg-6.col-xl-4.p-relative.index-2(data-aos="fade-in") 
+						.row.g-2
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#rating")
+										h4.h6.card__title.mb-0 1. Ocena stanu i identyfikacja zabrudzeń
+									//- .card__body Перед началом работ мы тщательно осматриваем мебель: определяем тип обивки, сложность пятен, источники запаха и материал наполнителя. Это позволяет подобрать оптимальную химию и метод чистки.
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#dry-cleaning")
+										h4.h6.card__title.mb-0 2. Usuwanie kurzu i przygotowanie na sucho
+									//- .card__body Специальным профессиональным пылесосом удаляются пыль, шерсть животных, крошки и другие сухие загрязнения, которые забиваются в поры ткани и мешают качественной чистке.
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon
+											svg(width="48" height="48")
+												use(href="#detergent")
+										h4.h6.card__title.mb-0 3. Naniesienie środka czyszczącego
+									//- .card__body Используем профессиональные средства, адаптированные под тип ткани. Формула подбирается индивидуально — против жировых пятен, биологических загрязнений, запахов и пролитых жидкостей.
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#process")
+										h4.h6.card__title.mb-0 4. Głębokie czyszczenie ekstrakcyjne
+									//- .card__body С помощью экстрактора (моющего пылесоса) раствор глубоко проникает в структуру ткани, растворяет грязь и тут же вытягивается вместе с загрязнениями. Это позволяет очистить даже те участки, которые не видны глазу.
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#local-cleaning")
+										h4.h6.card__title.mb-0 5. Lokalne usuwanie uporczywych plam
+									//- .card__body Особо устойчивые пятна (вино, кофе, жир, чернила) обрабатываются отдельно специализированными пятновыводителями, не повреждающими структуру ткани.
+							.col-12.col-sm-6.col-xl-12
+								.card.card-primary-outline
+									.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+									.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+									.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#result")
+										h4.h6.card__title.mb-0 6. Suszenie i końcowa kontrola jakości
+									//- .card__body После чистки мебель остается лишь слегка влажной и быстро сохнет. Мы убеждаемся в качестве результата, при необходимости повторно обрабатываем проблемные зоны.

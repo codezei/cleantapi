@@ -9,11 +9,12 @@ export default function () {
         let formData = new FormData(e.target)
         let work = []
         for (let [key, value] of formData.entries()) {
-        if (key === 'work') {
+        if (key === 'service') {
+            
             work.push(value)
         }
     }
-    formData.set('work', work.join('; '))
+    formData.set('service', work.join('; '))
         try {
         let response = await fetch('/telegram.php', {
             method: 'POST',

@@ -1,15 +1,15 @@
 extends settings/layout
 
 prepend html
-	- const lang = "uk";
+	- const lang = "pl";
 
 prepend head
 	- const pageTitle = "Pranie tapicerki meblowej — usuwanie plam i zapachów | Wrocław i okolice | Cleantapi"
 	- const pageDescription = "Profesjonalne pranie tapicerki meblowej we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy plamy, kurz, alergeny i zapachy. Bezpiecznie dla dzieci i zwierząt, szybkie schnięcie"
 	- const pageKeywords = "pranie tapicerki meblowej Wrocław, czyszczenie tapicerki Wrocław, usuwanie plam z tapicerki Wrocław, odświeżanie tapicerki Wrocław, pranie kanapy Wrocław, pranie narożnika Wrocław, czyszczenie foteli Wrocław, pranie tapicerki materiałowej Wrocław"
 	- const pageUrl = "pranie-tapicerki-meblowej-wroclaw.html"
-	- const pageImage = "img/service-furniture.jpg"
-	- const twitterImage = "img/service-furniture.jpg"
+	- const pageImage = "img/service-furniture.webp"
+	- const twitterImage = "img/service-furniture.webp"
 	- const themeColor = "#ffffff"
 
 
@@ -116,7 +116,7 @@ append content
 		const initialCategory = 0;
 	include components/header-2
 	main
-		include components/furniture/details
+		include components/promo/promo-furniture
 		include components/price
 		include components/how
 		include components/reviews

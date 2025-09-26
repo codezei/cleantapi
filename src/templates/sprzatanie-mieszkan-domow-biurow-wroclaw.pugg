@@ -4,10 +4,10 @@ prepend html
 	- const lang = "pl";
 
 prepend head
-	- const pageTitle = "Pranie tapicerki samochodowej — czyszczenie foteli i kanap | Wrocław i okolice | Cleantapi"
-	- const pageDescription = "Profesjonalne pranie tapicerki samochodowej we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy plamy, kurz, sierść i zapachy z foteli, kanap, podsufitki i bagażnika. Zadzwoń: +48 575 256 496"
-	- const pageKeywords = "pranie tapicerki samochodowej Wrocław, czyszczenie foteli samochodowych Wrocław, pranie kanapy w aucie Wrocław, usuwanie zapachów z auta Wrocław, czyszczenie wnętrza auta Wrocław, pranie podsufitki samochód Wrocław"
-	- const pageUrl = "pranie-tapicerki-samochodowej-wroclaw.html"
+	- const pageTitle = "Sprzątanie mieszkań, domów i biur | Profesjonalny serwis sprzątający — Wrocław i okolice | Cleantapi"
+	- const pageDescription = "Oferujemy kompleksowe sprzątanie mieszkań, domów i biur we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Sprzątanie cykliczne lub jednorazowe, ekologiczne środki, szybka realizacja. Zadzwoń: +48 575 256 496."
+	- const pageKeywords = "sprzątanie mieszkań Wrocław, sprzątanie domów Wrocław, sprzątanie biur Wrocław, firma sprzątająca Wrocław, sprzątanie regularne Wrocław, generalne porządki Wrocław, sprzątanie pomieszczeń Wrocław"
+	- const pageUrl = "sprzatanie-mieszkan-domow-biurow-wroclaw.html"
 	- const pageImage = "img/service-cleaning.webp"
 	- const twitterImage = "img/service-cleaning.webp"
 	- const themeColor = "#ffffff"
@@ -29,16 +29,16 @@ append head
 				{
 				"@type": "ListItem",
 				"position": 2,
-				"name": "Pranie tapicerki samochodowej",
-				"item": "https://cleantapi.pl/pranie-tapicerki-samochodowej-wroclaw.html"
+				"name": "Sprzątanie mieszkań, domów i biur",
+				"item": "https://cleantapi.pl/sprzatanie-mieszkan-domow-biurow-wroclaw/"
 				}
 			]
 			},
 			{
 			"@type": "Service",
-			"name": "Pranie tapicerki samochodowej",
-			"serviceType": "Czyszczenie tapicerki samochodowej",
-			"description": "Skuteczne pranie tapicerki samochodowej: usuwanie plam, kurzu, sierści i zapachów z siedzeń, kanap, podsufitki i bagażnika. Działamy we Wrocławiu i okolicach.",
+			"name": "Sprzątanie mieszkań, domów i biur",
+			"serviceType": "Usługi sprzątania pomieszczeń mieszkalnych i komercyjnych",
+			"description": "Profesjonalne sprzątanie mieszkań, domów i biur we Wrocławiu i okolicach. Sprzątanie cykliczne, generalne lub po remoncie. Ekologiczne środki i nowoczesny sprzęt.",
 			"areaServed": [
 				{ "@type": "City", "name": "Wrocław" },
 				{ "@type": "City", "name": "Jelcz-Laskowice" },
@@ -73,34 +73,34 @@ append head
 			"mainEntity": [
 				{
 				"@type": "Question",
-				"name": "Co obejmuje pranie tapicerki samochodowej?",
+				"name": "Jakie rodzaje sprzątania oferujecie?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Czyścimy fotele, kanapę, podsufitkę, bagażnik, dywaniki oraz boczki drzwiowe. W razie potrzeby także pasy bezpieczeństwa."
+					"text": "Oferujemy sprzątanie mieszkań, domów i biur — zarówno regularne, jak i jednorazowe, np. po remoncie czy przeprowadzce."
 				}
 				},
 				{
 				"@type": "Question",
-				"name": "Czy można usunąć zapachy z auta?",
+				"name": "Czy używane środki są bezpieczne?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Tak. Usuwamy zapachy wilgoci, dymu papierosowego, potu, jedzenia i zwierząt dzięki specjalistycznym środkom i technikom ekstrakcyjnym."
+					"text": "Tak. Używamy ekologicznych i bezpiecznych dla zdrowia środków czyszczących."
 				}
 				},
 				{
 				"@type": "Question",
-				"name": "Czy środki są bezpieczne dla dzieci?",
+				"name": "Czy można zamówić usługę w weekend?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Tak. Używamy certyfikowanych, bezpiecznych dla zdrowia środków czyszczących, odpowiednich także dla rodzin z dziećmi."
+					"text": "Tak, działamy od poniedziałku do soboty w godzinach 7:00 – 22:00. Sprzątanie w niedzielę — po wcześniejszym ustaleniu."
 				}
 				},
 				{
 				"@type": "Question",
-				"name": "Jak długo schnie wnętrze auta po praniu?",
+				"name": "Czy trzeba być obecnym podczas sprzątania?",
 				"acceptedAnswer": {
 					"@type": "Answer",
-					"text": "Zwykle od 3 do 8 godzin — w zależności od pogody i wentylacji. Możemy przyspieszyć suszenie za dopłatą."
+					"text": "Nie ma takiej konieczności, ale zawsze ustalamy indywidualnie preferencje klienta."
 				}
 				}
 			]
@@ -108,13 +108,12 @@ append head
 		]
 		}
 
-
 append content
 	script. 
-		const initialCategory = 3;
+		const initialCategory = 4;
 	include components/header-2
 	main
-		include components/promo/promo-salon
+		include components/promo/promo-cleaning
 		include components/price
 		include components/how
 		include components/reviews
