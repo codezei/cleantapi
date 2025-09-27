@@ -4,10 +4,10 @@ prepend html
 	- const lang = "pl";
 
 prepend head
-	- const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej i mycie okien — Wrocław"
+	- const pageTitle = "Pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej — Wrocław"
 	- const themeColor = "#ffffff"
-	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej i mycie okien we Wrocławiu. Usuwamy plamy, kurz i zapachy"
-	- const pageKeywords = "pranie tapicerki meblowej Wrocław, pranie tapicerki Wrocław, czyszczenie mebli Wrocław, pranie materacy Wrocław, czyszczenie dywanów Wrocław, mycie okien Wrocław, pranie tapicerki samochodowej Wrocław"
+	- const pageDescription = "Oferujemy profesjonalne pranie tapicerki meblowej, materacy, dywanów, czyszczenie tapicerki samochodowej we Wrocławiu. Usuwamy plamy, kurz i zapachy"
+	- const pageKeywords = "pranie tapicerki meblowej Wrocław, pranie tapicerki Wrocław, czyszczenie mebli Wrocław, pranie materacy Wrocław, czyszczenie dywanów Wrocław, pranie tapicerki samochodowej Wrocław"
 	- const pageUrl = "";
 	- const pageImage = "img/promo-img.webp";
 	- const twitterImage = "img/promo-img.webp";
@@ -17,10 +17,11 @@ append head
 	script(type="application/ld+json").
 		{
 		"@context": "https://schema.org",
-		"@type": "LocalBusiness",
+		"@type": ["LocalBusiness", "CleaningService"],
 		"name": "Cleantapi",
-		"description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej oraz mycie okien we Wrocławiu, Jelcz-Laskowicach, Oleśnicy, Brzegu, Oławie i okolicach.",
+		"description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej we Wrocławiu, Jelcz-Laskowicach, Oleśnicy, Brzegu, Oławie i okolicach.",
 		"url": "https://cleantapi.pl",
+		"email": "norovvitalikjaegarn@gmail.com",
 		"telephone": "+48 575 256 496",
 		"address": {
 			"@type": "PostalAddress",
@@ -88,16 +89,14 @@ append head
 				"@type": "Service",
 				"name": "Pranie tapicerki samochodowej"
 				}
-			},
-			{
-				"@type": "Offer",
-				"itemOffered": {
-				"@type": "Service",
-				"name": "Mycie okien"
-				}
 			}
 			]
-		}
+		},
+		"sameAs": [
+			"https://www.facebook.com/Cleantapi/",
+			"https://vm.tiktok.com/ZMNuDPJg2/",
+			"https://g.co/kgs/vs8CZY"
+		]
 		}
 
 
