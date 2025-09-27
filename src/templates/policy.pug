@@ -1,0 +1,24 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Polityka prywatności – Cleantapi"
+	- const themeColor = "#ffffff"
+	- const pageDescription = "Zapoznaj się z naszą polityką prywatności. Dowiedz się, jakie dane zbieramy, w jaki sposób je przetwarzamy i jakie masz prawa jako użytkownik strony Cleantapi."
+	- const pageKeywords = "polityka prywatności, ochrona danych osobowych, RODO, dane użytkownika, Cleantapi, przetwarzanie danych"
+	- const pageUrl = "";
+	- const pageImage = "img/promo-img.webp";
+	- const twitterImage = "img/promo-img.webp";
+
+append head
+
+append content
+	include components/header-3
+	main
+		include components/policy
+		include components/icons
+	include components/footer
+
+append scripts
