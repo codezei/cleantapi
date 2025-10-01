@@ -1,7 +1,7 @@
 section.about#about.bg.bg-dark 
 	.container
 		.row.gx-5.gy-0
-			.col-12.col-lg-4
+			.col-12.col-lg-5.col-xl-4
 				.mask 
 					.triangle.triangle-135.top-inner.left-inner
 					.triangle.triangle-45.top-inner.right-inner
@@ -20,15 +20,8 @@ section.about#about.bg.bg-dark
 						h2.mask__title O nas
 						h3.h6.mask__subtitle Zespół, który kocha swoją pracę i ceni Twój czas
 						p.text-center
-							a.btn.btn-primary-outline.btn-normal.btn-rhombus.w-100.text-center(href="tel:+48575256496") 
-								span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner
-								span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner
-								span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner
-								span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner
-								svg.icon.icon-right.shake(width="16" height="16")
-									use(href="#tel")
-								| Zadzwoń
-			.col-12.col-lg-8.align-self-center 
+							include cta-button
+			.col-12.col-lg-7.col-xl-8.align-self-center 
 				.block
 					.about__info(data-aos="fade-left" data-aos-delay="200")
 						p Nasi klienci nam ufają, ponieważ do każdej pracy podchodzimy z pełnym profesjonalizmem. Specjalizujemy się w czyszczeniu tapicerki meblowej, materacy, dywanów, okien oraz w praniu tapicerki samochodowej.

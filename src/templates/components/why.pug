@@ -1,7 +1,7 @@
 section.why#why.bg.bg-dark
 	.container
 		.row.flex-column-reverse.flex-lg-row.gx-5.gy-0 
-			.col-12.col-lg-6.col-xl-8.align-self-center 
+			.col-12.col-lg-7.col-xl-8.align-self-center 
 				.block
 					.row.g-4.align-items-center.justify-content-center 
 						.col-12(data-aos="fade-right" data-aos-delay="200")
@@ -54,7 +54,7 @@ section.why#why.bg.bg-dark
 													use(href="#safe")
 											h4.h6.card__title.mb-0 Bezpieczne dla dzieci i zwierząt
 										.card__body Stosujemy hipoalergiczne środki, które są bezpieczne dla zdrowia
-			.col-12.col-lg-6.col-xl-4
+			.col-12.col-lg-5.col-xl-4
 				.mask
 					.triangle.triangle-135.top-inner.left-inner
 					.triangle.triangle-45.top-inner.right-inner
@@ -73,11 +73,4 @@ section.why#why.bg.bg-dark
 						h2.mask__title Dlaczego właśnie my?
 						h3.h6.mask__subtitle Nasi klienci wracają do nas — i oto dlaczego
 						p.text-center
-							a.btn.btn-primary-outline.btn-normal.btn-rhombus.w-100.text-center(href="tel:+48575256496") 
-								span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner
-								span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner
-								span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner
-								span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner
-								svg.icon.icon-right.shake(width="16" height="16")
-									use(href="#tel")
-								| Zadzwoń
+							include cta-button

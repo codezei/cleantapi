@@ -1,17 +1,17 @@
 section.promo#promo.bg.bg-dark
 	.container 
 		.row.flex-column-reverse.flex-lg-row
-			.col-12.col-lg-8.align-self-center 
+			.col-12.col-lg-7.col-xl-8.align-self-center 
 				.block
 					.row.g-4.g-xl-5 
 						.col-12
-							h1.details__title.mb-0.text-uppercase Mycie okien w mieszkaniach, domach i biurach we Wrocławiu
+							h1.promo__title.mb-0.text-uppercase Mycie okien w mieszkaniach, domach i biurach we Wrocławiu
 						.col-12
-							.details__subtitle.extractor 
+							.promo__subtitle.extractor 
 								.extractor__cleaner(data-aos="fade-left" data-aos-delay="100") 
 								h2.h5.text-light.extractor__text.mb-0(data-aos="fade-left" data-aos-delay="200") Zapewniamy idealną czystość okien bez smug i zacieków. Używamy profesjonalnych środków i sprzętu, aby przywrócić przejrzystość i blask nawet dużym i trudno dostępnym oknom.
 						.col-12
-							ul.m-0
+							ul.m-0.list-check
 								li Idealnie czyste okna bez smug
 								li Mycie od wewnątrz i z zewnątrz, nawet w trudno dostępnych miejscach
 								li Użycie bezpiecznych i skutecznych środków
@@ -20,31 +20,28 @@ section.promo#promo.bg.bg-dark
 								li Dojazd w dogodnym terminie
 						.col-12
 							.row.g-2.justify-content-center.justify-content-lg-start 
-								include ../cta-buttons-2
-			.col-12.col-lg-4
+								.col-auto.flex-grow-1.flex-lg-grow-0
+									include ../cta-button
+			.col-12.col-lg-5.col-xl-4
 				.mask
 					.triangle.triangle-135.top-inner.left-inner
 					.triangle.triangle-45.top-inner.right-inner
 					.triangle.triangle-225.bottom-inner.left-inner
 					.triangle.triangle-315.bottom-inner.right-inner
 					.triangle.triangle-45.top-inner.left-outer.offset-x-p
+					.triangle.triangle-315.bottom-inner.left-outer.offset-x-p.d-none.d-lg-block
 					.triangle.triangle-135.top-inner.right-outer.offset-x-p
 					.triangle.triangle-225.bottom-inner.right-outer.offset-x-p.d-none.d-lg-block
 					.triangle.triangle-315.triangle-fill.bottom-inner.right-inner.offset-x-n.d-lg-none.correction-y-n
+					.triangle.triangle-225.triangle-fill.bottom-inner.left-inner.offset-x-n.d-lg-none.correction-y-n
 					.line.line-v-100.top-inner.right-outer
-					.line.line-v-50.top-inner.left-outer
+					.line.line-v-100.top-inner.left-outer
 					.line.line-h-100.bottom-inner.left-inner.d-lg-none.correction-y-n
-					.rectangle.rectangle-50.left-inner.bottom-inner
-						.triangle.triangle-225.left-inner.top-outer
-						.triangle.triangle-225.bottom-inner.right-outer
-						.triangle.triangle-225.triangle-fill.left-inner.offset-x-n.top-outer.correction-y-n
-						.rectangle.rectangle-100.rectangle-fill.left-inner.offset-x-n.bottom-inner.correction-y-n
-						.triangle.triangle-225.triangle-fill.bottom-inner.right-outer.offset-x-n.correction-y-n
-					img.mask__img(src="img/service-window.jpg" alt="" data-aos="fade-in")
+					img.mask__img(src="img/service-window.jpg" alt="mycie okien" fetchpriority="high")
 					.mask__inner
-						.text-center.text-light 
-							b.text-bold Obsługujemy miasta: 
+						h3.h6.text-center.text-light 
+							b.text-bold Usługi mycie okien: 
 							br
-							span Wrocław, Jelcz-laskowice, Oleśnica, Brzeg, Oława, okolice
+							span Wrocław i okolice, Jelcz-laskowice, Oleśnica, Brzeg, Oława
 							br
 							span Pon. - Sob. 7:00 - 22:00
