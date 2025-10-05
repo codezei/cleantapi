@@ -1,0 +1,116 @@
+section.reviews.block#reviews
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.reviews__title.text-uppercase.mb-0 Opinie
+					.col-auto(data-aos="fade-left") 
+						.swiper-navigation
+							.reviews-button-prev.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.reviews-button-next.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.reviews__subtitle.h4.h6.text-light.mb-0 Opinie klientów, którzy skorzystali z usługi prania tapicerki samochodowej we Wrocławiu
+			.col-12(data-aos="fade-in" data-aos-delay="100") 
+				.swiper.reviews-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Valeriia Ivanova
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Gorąco polecam usługi tej firmy! Miałam okazję skorzystać z uslug czyszczenia samochodu. Samochód wygląda jak nowy - wnętrze jest czyste, wszystkie plamy zostały usunięte, a tapicerka odświeżona. Obsługa była bardzo profesjonalna i uprzejma, a usługa została wykonana szybko i dokładnie.
+									picture 
+										source(srcset="img/review-img-3.webp" type="image/webp")
+										img.review__img(src="img/review-img-3.jpg", alt="", loading="lazy")
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Nataliia Vovk
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Jestem bardzo zadowolona usługami tej firmy, zamówiłam czyszczenie tapicerki krzeseł samochodowych oraz podłogi, czyszczenie zostało przeprowadzone dokładnie i skrupulatnie, nigdy nie miałam takiego czystego auta. Polecam jak najbardziej.
+									picture 
+										source(srcset="img/review-img-4.webp" type="image/webp")
+										img.review__img(src="img/review-img-4.jpg", alt="", loading="lazy")
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Siuzanna Abramian
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Auto zostało porządnie wyprane. Zadowolona z usługi w 100%
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Ihor Kuts
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text najlepsza obsługa we Wrocławiu, bardzo profesjonalna obsługa, polecam 👍👍👏…
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Fed
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Jakość wykonania usługi bardzo wysoka.
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Zlatin Ihor
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Najlepsza obsługa, rzetelność i kompetencja ! Polecam
+			.col-12 
+				.text-center
+					a(href="https://share.google/zuCkGNo8izLHwAEiC" target="_blank") Tutaj
+					| &nbsp;możesz przeczytać wszystkie recenzje i zostawić własne.

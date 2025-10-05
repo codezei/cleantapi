@@ -56,12 +56,16 @@
       font-size: 0.9em;
       transition: all 400ms;
     }
+    &__text:has(~ .review__toggle):not(.active) &__img {
+      display: none;
+    }
     &__text:has(~ .review__toggle):not(.active) {
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 5;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       position: relative;
+
       &:before {
         content: "";
         display: block;

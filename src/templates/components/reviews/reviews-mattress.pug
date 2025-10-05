@@ -1,0 +1,101 @@
+section.reviews.block#reviews
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.reviews__title.text-uppercase.mb-0 Opinie
+					.col-auto(data-aos="fade-left") 
+						.swiper-navigation
+							.reviews-button-prev.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.reviews-button-next.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.reviews__subtitle.h4.h6.text-light.mb-0 Opinie klientów, którzy skorzystali z usługi prania materacy we Wrocławiu
+			.col-12(data-aos="fade-in" data-aos-delay="100") 
+				.swiper.reviews-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Serhii
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Nie wiem, jak się pan nazywa, ale chciałbym podziękować za bardzo czystą kanapę i materac. Wszystko zostało dokładnie wyczyszczone, i jestem mega zadowolony z pracy, którą pan wykonał. Kanapa miała być wyrzucona, ale po takim czyszczeniu…
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Serhii Suchko
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Bardzo dobra firma, podobało mi się. Chłopaki działają szybko i kompetentnie. Polecam!
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name BOGDAN IVASHURA
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Serdecznie polecam fachowce, super jakość, w dobrej cenie!
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Karol W
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Profesjonalna szybka realizacja zlecenia, miła i fachowa obsługa.
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Magdalena Zdziebło
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Szybko, profesjonalnie i co najważniejsze z oczekiwanym efektem. Polecam!
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Volodymyr Podolian
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Wszystko na wyższym poziomie. Firma godna polecenia👍👍…
+			.col-12 
+				.text-center
+					a(href="https://share.google/zuCkGNo8izLHwAEiC" target="_blank") Tutaj
+					| &nbsp;możesz przeczytać wszystkie recenzje i zostawić własne.

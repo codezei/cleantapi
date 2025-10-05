@@ -19,7 +19,7 @@ append head
 		"@context": "https://schema.org",
 		"@type": ["LocalBusiness", "CleaningService"],
 		"name": "Cleantapi",
-		"description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej we Wrocławiu, Jelcz-Laskowicach, Oleśnicy, Brzegu, Oławie i okolicach.",
+		"description": "Profesjonalne pranie tapicerki meblowej, materacy, dywanów, tapicerki samochodowej we Wrocławiu i okolicach, Jelcz-Laskowicach, Oleśnicy, Brzegu, Oławie.",
 		"url": "https://cleantapi.pl",
 		"email": "norovvitalikjaegarn@gmail.com",
 		"telephone": "+48 575 256 496",
@@ -95,8 +95,54 @@ append head
 		"sameAs": [
 			"https://www.facebook.com/Cleantapi/",
 			"https://vm.tiktok.com/ZMNuDPJg2/",
-			"https://g.co/kgs/vs8CZY"
-		]
+			"https://share.google/zuCkGNo8izLHwAEiC"
+		],
+		"mainEntity": {
+			"@type": "FAQPage",
+			"mainEntity": [
+			{
+				"@type": "Question",
+				"name": "Jak często należy czyścić meble tapicerowane?",
+				"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Zalecamy profesjonalne czyszczenie tapicerki meblowej co 6–12 miesięcy. W domach, gdzie są dzieci, zwierzęta domowe lub osoby cierpiące na alergie, warto robić to częściej, aby meble pozostały czyste i świeże."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Czy można usunąć wszystkie plamy?",
+				"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Większość plam można skutecznie usunąć, ale wszystko zależy od rodzaju plamy, czasu jej obecności oraz wcześniejszych prób czyszczenia. Niektóre uporczywe plamy mogą pozostawić niewielkie przebarwienia."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Ile czasu potrzebuje tapicerka, aby wyschła po czyszczeniu?",
+				"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Czas schnięcia zależy od rodzaju materiału oraz warunków w pomieszczeniu. Zazwyczaj zajmuje to od 5 do 12 godzin. Tapicerka schnie szybciej w ciepłym i dobrze wentylowanym miejscu. Za dodatkową opłatą zgodnie z cennikiem można skorzystać z usługi przyspieszonego suszenia."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Czy środki czyszczące są bezpieczne dla dzieci i zwierząt domowych?",
+				"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Tak. Używamy certyfikowanych środków, które są bezpieczne i nie powodują alergii. Po czyszczeniu zalecamy nie korzystać z mebli, dopóki całkowicie nie wyschną."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Jak przygotować meble do czyszczenia?",
+				"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Wystarczy usunąć poduszki, koce i inne przedmioty z mebli. Nie ma potrzeby ich przestawiać ani przesuwać — wszystkim zajmiemy się na miejscu."
+				}
+			}
+			]
+		}
+
 		}
 
 
@@ -110,12 +156,12 @@ append content
 		include components/about
 		include components/process
 		include components/why
-		include components/price
+		include components/price/price
 		include components/how
-		include components/works
+		include components/works/works-main
 		include components/cta
-		include components/reviews
-		include components/faq
+		include components/reviews/reviews-main
+		include components/faq/faq-main
 		include components/contacts
 		include components/popup
 		include components/icons
