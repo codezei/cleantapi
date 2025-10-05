@@ -1,0 +1,135 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie tapicerki samochodowej — czyszczenie foteli i kanap | Jelcz-laskowice | Cleantapi"
+	- const pageDescription = "Pranie tapicerki samochodowej we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy plamy, kurz, sierść i zapachy z foteli, kanap, podsufitki i bagażnika. Zadzwoń: +48 575 256 496"
+	- const pageKeywords = "czyszczenie tapicerki samochodowej Jelcz-laskowice, pranie tapicerki samochodowej Jelcz-laskowice, czyszczenie foteli samochodowych Jelcz-laskowice, pranie foteli samochodowych Jelcz-laskowice, pranie kanapy w aucie Jelcz-laskowice, czyszczenie kanapy w aucie Jelcz-laskowice, usuwanie zapachów z auta Jelcz-laskowice, czyszczenie wnętrza auta Jelcz-laskowice, pranie wnętrza auta Jelcz-laskowice, pranie podsufitki samochód Jelcz-laskowice, czyszczenie podsufitki samochód Jelcz-laskowice"
+	- const pageUrl = "pranie-tapicerki-samochodowej-jelcz-laskowice.html"
+	- const pageImage = "img/service-cleaning.webp"
+	- const twitterImage = "img/service-cleaning.webp"
+	- const themeColor = "#ffffff"
+
+append head
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Strona główna",
+				"item": "https://cleantapi.pl/jelcz-laskowice.html"
+				},
+				{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Pranie tapicerki samochodowej",
+				"item": "https://cleantapi.pl/pranie-tapicerki-samochodowej-jelcz-laskowice.html"
+				}
+			]
+			},
+			{
+			"@type": "Service",
+			"name": "Pranie tapicerki samochodowej",
+			"serviceType": "Czyszczenie tapicerki samochodowej",
+			"description": "Skuteczne pranie tapicerki samochodowej: usuwanie plam, kurzu, sierści i zapachów z siedzeń, kanap, podsufitki i bagażnika. Działamy we Wrocławiu i okolicach.",
+			"areaServed": [
+				{ "@type": "City", "name": "Wrocław" },
+				{ "@type": "City", "name": "Jelcz-Laskowice" },
+				{ "@type": "City", "name": "Oleśnica" },
+				{ "@type": "City", "name": "Brzeg" },
+				{ "@type": "City", "name": "Oława" }
+			],
+			"provider": {
+				"@type": ["LocalBusiness", "CleaningService"],
+				"name": "Cleantapi",
+				"url": "https://cleantapi.pl",
+				"telephone": "+48 575 256 496",
+				"email": "norovvitalikjaegarn@gmail.com",
+				"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Jelcz-Laskowice",
+				"addressCountry": "PL"
+				}
+			},
+			"termsOfService": "https://cleantapi.pl/",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"servicePhone": {
+				"@type": "ContactPoint",
+				"telephone": "+48 575 256 496",
+				"contactType": "customer service",
+				"areaServed": "PL"
+				}
+			}
+			},
+			{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+				"@type": "Question",
+				"name": "Co obejmuje pranie tapicerki samochodowej?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Czyścimy fotele, kanapę, podsufitkę, bagażnik, dywaniki oraz boczki drzwiowe. W razie potrzeby także pasy bezpieczeństwa."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy można usunąć zapachy z auta?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Usuwamy zapachy wilgoci, dymu papierosowego, potu, jedzenia i zwierząt dzięki specjalistycznym środkom i technikom ekstrakcyjnym."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy środki są bezpieczne dla dzieci?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Używamy certyfikowanych, bezpiecznych dla zdrowia środków czyszczących, odpowiednich także dla rodzin z dziećmi."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Jak długo schnie wnętrze auta po praniu?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Zwykle od 3 do 8 godzin — w zależności od pogody i wentylacji. Dodatkowo oferujemy usługę suszenia, dzięki której po zakończeniu pracy i wyjeździe naszego specjalisty wszystkie czyszczone powierzchnie pozostają suche i gotowe do użytku."
+				}
+				}
+			]
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/Cleantapi/",
+			"https://vm.tiktok.com/ZMNuDPJg2/",
+			"https://g.co/kgs/vs8CZY"
+		]
+		}
+
+
+append content
+	script. 
+		const initialCategory = 3;
+	include components/header/jelcz-laskowice/header-2
+	main
+		include components/promo/jelcz-laskowice/promo-salon
+		include components/price/jelcz-laskowice/price
+		include components/how
+		include components/reviews/jelcz-laskowice/reviews-salon
+		include components/cta
+		include components/works/jelcz-laskowice/works-salon
+		include components/faq/faq-salon
+		include components/contacts/jelcz-laskowice/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

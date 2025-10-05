@@ -1,0 +1,101 @@
+section.reviews.block#reviews
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.reviews__title.text-uppercase.mb-0 Opinie
+					.col-auto(data-aos="fade-left") 
+						.swiper-navigation
+							.reviews-button-prev.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.reviews-button-next.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.reviews__subtitle.h4.h6.text-light.mb-0 Opinie klientów, którzy skorzystali z usługi prania materacy w Jelczu-Laskowicach
+			.col-12(data-aos="fade-in" data-aos-delay="100") 
+				.swiper.reviews-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Maja Gajewska
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Rzadko chce mi się wystawiać opinie, ale tu muszę. Czyszczenie pierwsza klasa! Materace w łóżkach wyglądają jak nowe, narożnik również. Pan, który wykonywał usługę był bardzo sympatyczny i przede wszystkim zmienił buty na domowe, co nie jest oczywiste dla niektórych fachowców wchodzących w brudnych buciorach np. do pokoju dziecka. 100% profesjonalizmu!
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Monika Stojanowicz
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Bardzo miły kontakt. Usługa wykonana profesjonalnie i szybko. Polecam :-) ja na pewno jeszcze nie raz skorzystam.
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Łukasz
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Jestem bardzo zadowolony z usługi czyszczenia łóżka, wielki plus za punktualność, profesjonalizm i cenę.
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Ewa Wysocka
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Została wykonana usługa czyszczenia materaca. Szybko i dokładnie. Serdecznie polecam.
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Bartłomiej Ułaniak
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Jak najbardziej firma godna polecenia. Szybko, profesjonalnie i sprawnie. Bardzo dobry efekt w przystępnej cenie
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Liza Bondar
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Bardzo rekomenduje tu firmy . Wszystko zrobione dokładnie i profesjonalnie. Polecam wszystkim 👌.…
+			.col-12 
+				.text-center
+					a(href="https://g.co/kgs/vs8CZY" target="_blank") Tutaj
+					| &nbsp;możesz przeczytać wszystkie recenzje i zostawić własne.

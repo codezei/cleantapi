@@ -52,8 +52,8 @@ append head
 		],
 		"geo": {
 			"@type": "GeoCoordinates",
-			"latitude": 51.1079,
-			"longitude": 17.0385
+			"latitude": 51.10446,
+			"longitude": 17.04432
 		},
 		"openingHours": "Mo-Sa 07:00-22:00",
 		"priceRange": "PLN",
@@ -149,10 +149,10 @@ append head
 append content
 	script. 
 		const initialCategory = 0;
-	include components/header
+	include components/header/header
 	main
 		include components/promo/promo-main
-		include components/services
+		include components/services/services
 		include components/about
 		include components/process
 		include components/why
@@ -162,7 +162,7 @@ append content
 		include components/cta
 		include components/reviews/reviews-main
 		include components/faq/faq-main
-		include components/contacts
+		include components/contacts/contacts
 		include components/popup
 		include components/icons
 	include components/footer

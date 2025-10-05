@@ -1,0 +1,152 @@
+section.reviews.block#reviews
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.reviews__title.text-uppercase.mb-0 Opinie
+					.col-auto(data-aos="fade-left") 
+						.swiper-navigation
+							.reviews-button-prev.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.reviews-button-next.btn.btn-third.btn-small
+								.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+								svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.reviews__subtitle.h4.h6.text-light.mb-0 Opinie klientów, którzy skorzystali z usługi prania tapicerki meblowej w Jelczu-Laskowicach
+			.col-12(data-aos="fade-in" data-aos-delay="100") 
+				.swiper.reviews-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Anna Anna
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Jestem bardzo zadowolona z efektów pracy Pana Vitalija. Fotele i kanapa po długotrwałym użytkowaniu, przy dwójce dzieci i dwóch psach zostały porządnie wyczyszczone. Odzyskały pierwotne kolory i zapach czystości. Dodatkowo kanapa została osuszona, dzięki czemu mogłam szybko z niej korzystać. Na pewno ponownie skorzystam z usługi w przyszłym roku. Polecam :)
+									picture 
+										source(srcset="img/review-img-7.webp", type="image/webp")
+										img.review__img(src="img/review-img-7.jpg", alt="")
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline 
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Bożena Babska
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Muszę bardzo mocno zarekomendować usługi Pana Vitalija. Z całym przekonaniem polecam .Czyszczenie mebli w biurze przebiegło sprawnie i rzetelnie zostało wykonane. Ceny są przystępne.
+									picture 
+										source(srcset="img/review-img-5.webp" type="image/webp")
+										img.review__img(src="img/review-img-5.jpg", alt="", loading="lazy")
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Lina Protsenko
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Bardzo dziękuję firmie cleanTapi. Bardzo dobra robota. Mòj narożnik odżył, dzięki profesjonalnym dzialaniam pracowników firmy cleanTapi. Polecam
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Edyta Nowicka
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Serdecznie polecam! Jestem bardzo zadowolona z wykonanej usługi. Meble czyste, pachnące, praktycznie jak nowe :) Bardzo dobry kontakt i punktualność. Profesjonalny sprzęt i fachowo wykonana praca !
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Dina Ivannikova
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Gorąco polecam usługi czyszczenia! Szybka konsultacja, profesjonalizm, fajne wyniki i miła obsługa. Myślałam, że stare plamy to już na zawsze. Ale ponownie mamy piękny wygląd łóżka i bez chemichnego zapachu (ważne, bo są alergicy w rodzinie).
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+						.swiper-slide
+							.review.card.card-primary-outline  
+								.triangle.triangle-small.triangle-135.top-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-45.top-inner.right-inner.bordered
+								.triangle.triangle-small.triangle-225.bottom-inner.left-inner.bordered
+								.triangle.triangle-small.triangle-315.bottom-inner.right-inner.bordered
+								.review__header
+									h4.h6.review__name Marta Borek
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Wielokrotnie korzystałam z usług prania mebli, ale jakość wykonania w tej firmie zasługuje na wyróżnienie. Kanapy jak nowe, bez żadnej plamki. Zapach zwierzakow zniknął. Dzięki profesjonalnemu suszeniu, mebli można było używać od razu. Zdecydowanie polecam! :)
+								.review__toggle
+									span.in-active-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye")
+										| Pokaż więcej
+									span.in-inactive-none 
+										svg.icon.icon-right(width="16" height="16")
+											use(href="#eye-close")
+										| Pokaż mniej
+			.col-12 
+				.text-center
+					a(href="https://g.co/kgs/vs8CZY" target="_blank") Tutaj
+					| &nbsp;możesz przeczytać wszystkie recenzje i zostawić własne.

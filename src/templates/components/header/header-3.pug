@@ -1,8 +1,9 @@
-header.header 
+header.header
 	.container 
 		.header__inner
 			.header__logo 
-				include logo
+				a.link(href="/")
+					include ../logo
 			.header__menu#main-menu 
 				nav.menu 
 					.menu__item
@@ -16,22 +17,12 @@ header.header
 								a.menu__link(href="./pranie-materacy-wroclaw.html") Pranie materacy
 							.menu__item
 								a.menu__link(href="./pranie-dywanow-wroclaw.html") Pranie dywanow
-							//- .menu__item
-							//- 	a.menu__link(href="./mycie-okien-wroclaw.html") Mycie okien
 							.menu__item
 								a.menu__link(href="./pranie-tapicerki-samochodowej-wroclaw.html") Pranie tapicerki samochodowej
 					.menu__item
-						a.menu__link(href="#price") Cennik
-					.menu__item
-						a.menu__link(href="#reviews") Opinie
-					.menu__item
-						a.menu__link(href="#works") Prace
-					.menu__item
-						a.menu__link(href="#contacts") Kontakt
-					.menu__item
 						a.menu__link(href="https://cleantapi-course.netlify.app/", target="_blank") Kurs
 				.header__menu-socials.text-center
-					include socials
+					include ../socials/socials
 				.header__menu-btn.text-center
 					a.btn.btn-third.btn-small.btn-rhombus(href="tel:+48575256496") 
 						span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered

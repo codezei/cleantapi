@@ -1,0 +1,137 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie tapicerki meblowej — usuwanie plam i zapachów | Jelcz-laskowice | Cleantapi"
+	- const pageDescription = "Pranie tapicerki meblowej we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy plamy, kurz, alergeny i zapachy. Bezpiecznie dla dzieci i zwierząt, szybkie schnięcie. Zadzwoń: +48 575 256 496"
+	- const pageKeywords = "pranie tapicerki Jelcz-laskowice, czyszczenie tapicerki Jelcz-laskowice, pranie tapicerki meblowej Jelcz-laskowice, czyszczenie tapicerki meblowej Jelcz-laskowice, usuwanie plam z tapicerki Jelcz-laskowice, odświeżanie tapicerki Jelcz-laskowice, pranie kanapy Jelcz-laskowice, czyszczenie kanapy Jelcz-laskowice, pranie narożnika Jelcz-laskowice, czyszczenie narożnika Jelcz-laskowice, czyszczenie foteli Jelcz-laskowice, pranie foteli Jelcz-laskowice, pranie tapicerki materiałowej Jelcz-laskowice, czyszczenie tapicerki materiałowej Jelcz-laskowice"
+	- const pageUrl = "pranie-tapicerki-meblowej-jelcz-laskowice.html"
+	- const pageImage = "img/service-furniture.webp"
+	- const twitterImage = "img/service-furniture.webp"
+	- const themeColor = "#ffffff"
+
+
+append head
+	script(type="application/ld+json").
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Strona główna",
+					"item": "https://cleantapi.pl/jelcz-laskowice.html"
+					},
+					{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Pranie tapicerki meblowej",
+					"item": "https://cleantapi.pl/pranie-tapicerki-meblowej-jelcz-laskowice.html"
+					}
+				]
+				},
+				{
+				"@type": "Service",
+				"name": "Pranie tapicerki meblowej",
+				"serviceType": "Czyszczenie i pranie tapicerki meblowej",
+				"description": "Profesjonalne pranie tapicerki meblowej: usuwanie plam, kurzu, alergenów i nieprzyjemnych zapachów. Bezpieczne środki, szybkie schnięcie, obsługa we Wrocławiu i okolicach.",
+				"areaServed": [
+					{ "@type": "City", "name": "Wrocław" },
+					{ "@type": "City", "name": "Jelcz-Laskowice" },
+					{ "@type": "City", "name": "Oleśnica" },
+					{ "@type": "City", "name": "Brzeg" },
+					{ "@type": "City", "name": "Oława" }
+				],
+				"provider": {
+					"@type": ["LocalBusiness", "CleaningService"],
+					"name": "Cleantapi",
+					"url": "https://cleantapi.pl",
+					"telephone": "+48 575 256 496",
+					"email": "norovvitalikjaegarn@gmail.com",
+					"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Jelcz-Laskowice",
+					"addressCountry": "PL"
+					}
+				},
+				"termsOfService": "https://cleantapi.pl/",
+				"availableChannel": {
+					"@type": "ServiceChannel",
+					"servicePhone": {
+					"@type": "ContactPoint",
+					"telephone": "+48 575 256 496",
+					"contactType": "customer service",
+					"areaServed": "PL"
+					}
+				}
+				},
+				{
+				"@type": "FAQPage",
+				"mainEntity": [
+					{
+					"@type": "Question",
+					"name": "Jak często należy prać tapicerkę meblową w domu?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Tapicerkę zaleca się prać co 6–12 miesięcy, w zależności od intensywności użytkowania i obecności dzieci lub zwierząt w domu."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Czy pranie kanapy usuwa roztocza i alergeny?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Tak, profesjonalne pranie skutecznie usuwa roztocza, kurz i alergeny, poprawiając jakość powietrza w pomieszczeniu."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Ile czasu schnie tapicerka po profesjonalnym czyszczeniu?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Zwykle proces schnięcia trwa od 4 do 8 godzin, w zależności od rodzaju materiału i wentylacji pomieszczenia, lub skorzystaj z usługi suszenia."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Czy wszystkie plamy da się całkowicie usunąć?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Większość świeżych i typowych zabrudzeń można usunąć, jednak stare i głęboko wchłonięte plamy mogą pozostać mniej widoczne, ale nie zawsze znikają całkowicie."
+					}
+					}
+				]
+				}
+			],
+			"sameAs": [
+				"https://www.facebook.com/Cleantapi/",
+				"https://vm.tiktok.com/ZMNuDPJg2/",
+				"https://g.co/kgs/vs8CZY"
+			]
+		}
+
+
+
+append content
+	script. 
+		const initialCategory = 0;
+	include components/header/jelcz-laskowice/header-2
+	main
+		include components/promo/jelcz-laskowice/promo-furniture
+		include components/price/jelcz-laskowice/price
+		include components/how
+		include components/reviews/jelcz-laskowice/reviews-furniture
+		include components/cta
+		include components/works/jelcz-laskowice/works-furniture
+		include components/faq/faq-furniture
+		include components/contacts/jelcz-laskowice/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

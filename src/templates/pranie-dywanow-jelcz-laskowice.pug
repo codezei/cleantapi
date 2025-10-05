@@ -1,0 +1,136 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie dywanów i wykładzin — czyszczenie i usuwanie plam | Jelcz-laskowice | Cleantapi"
+	- const pageDescription = "Pranie dywanów i wykładzin we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy brud, plamy, sierść i zapachy. Profesjonalny sprzęt i środki. Zadzwoń: +48 575 256 496"
+	- const pageKeywords = "pranie dywanów Jelcz-laskowice, czyszczenie dywanów Jelcz-laskowice, usuwanie plam z dywanu Jelcz-laskowice, pranie wykładzin Jelcz-laskowice, czyszczenie wykładzin Jelcz-laskowice, czyszczenie dywanów z sierści Jelcz-laskowice, odświeżanie dywanów Jelcz-laskowice"
+	- const pageUrl = "pranie-dywanow-jelcz-laskowice.html"
+	- const pageImage = "img/service-carpet.webp"
+	- const twitterImage = "img/service-carpet.webp"
+	- const themeColor = "#ffffff"
+
+append head
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Strona główna",
+				"item": "https://cleantapi.pl/jelcz-laskowice.html"
+				},
+				{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Pranie dywanów",
+				"item": "https://cleantapi.pl/pranie-dywanow-jelcz-laskowice.html"
+				}
+			]
+			},
+			{
+			"@type": "Service",
+			"name": "Pranie dywanów",
+			"serviceType": "Czyszczenie i pranie dywanów",
+			"description": "Profesjonalne pranie dywanów i wykładzin: usuwanie plam, brudu, sierści i zapachów. Obsługujemy Jelcz-laskowice. Skutecznie i bezpiecznie.",
+			"areaServed": [
+				{ "@type": "City", "name": "Wrocław" },
+				{ "@type": "City", "name": "Jelcz-Laskowice" },
+				{ "@type": "City", "name": "Oleśnica" },
+				{ "@type": "City", "name": "Brzeg" },
+				{ "@type": "City", "name": "Oława" }
+			],
+			"provider": {
+				"@type": ["LocalBusiness", "CleaningService"],
+				"name": "Cleantapi",
+				"url": "https://cleantapi.pl",
+				"telephone": "+48 575 256 496",
+				"email": "norovvitalikjaegarn@gmail.com",
+				"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Jelcz-Laskowice",
+				"addressCountry": "PL"
+				}
+			},
+			"termsOfService": "https://cleantapi.pl/",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"servicePhone": {
+				"@type": "ContactPoint",
+				"telephone": "+48 575 256 496",
+				"contactType": "customer service",
+				"areaServed": "PL"
+				}
+			}
+			},
+			{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+				"@type": "Question",
+				"name": "Jakie dywany można czyścić?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Czyścimy dywany z wełny, syntetyczne, shaggy, perskie i wykładziny dywanowe. Dostosowujemy metodę do rodzaju włókna."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy można usunąć sierść i zapach zwierząt?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Usuwamy sierść oraz nieprzyjemne zapachy zwierząt domowych za pomocą specjalistycznych środków."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Jak długo schnie dywan po czyszczeniu?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Zwykle od 6 do 12 godzin. Czas zależy od grubości runa i warunków w pomieszczeniu. Dodatkowo oferujemy usługę suszenia, dzięki której po zakończeniu pracy i wyjeździe naszego specjalisty wszystkie czyszczone powierzchnie pozostają suche i gotowe do użytku."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy czyszczenie dywanów jest bezpieczne?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Stosujemy bezpieczne środki czyszczące, które są przyjazne dla dzieci, zwierząt i alergików."
+				}
+				}
+			]
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/Cleantapi/",
+			"https://vm.tiktok.com/ZMNuDPJg2/",
+			"https://g.co/kgs/vs8CZY"
+		]
+		}
+
+
+
+append content
+	script. 
+		const initialCategory = 2;
+	include components/header/jelcz-laskowice/header-2
+	main
+		include components/promo/jelcz-laskowice/promo-carpet
+		include components/price/jelcz-laskowice/price
+		include components/how
+		include components/reviews/jelcz-laskowice/reviews-carpet
+		include components/cta
+		include components/works/jelcz-laskowice/works-carpet
+		include components/faq/faq-carpet
+		include components/contacts/jelcz-laskowice/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

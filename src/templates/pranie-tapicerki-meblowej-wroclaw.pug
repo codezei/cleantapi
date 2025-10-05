@@ -16,103 +16,103 @@ prepend head
 append head
 	script(type="application/ld+json").
 		{
-		"@context": "https://schema.org",
-		"@graph": [
-			{
-			"@type": "BreadcrumbList",
-			"itemListElement": [
+			"@context": "https://schema.org",
+			"@graph": [
 				{
-				"@type": "ListItem",
-				"position": 1,
-				"name": "Strona główna",
-				"item": "https://cleantapi.pl/"
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Strona główna",
+					"item": "https://cleantapi.pl/"
+					},
+					{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Pranie tapicerki meblowej",
+					"item": "https://cleantapi.pl/pranie-tapicerki-meblowej-wroclaw.html"
+					}
+				]
 				},
 				{
-				"@type": "ListItem",
-				"position": 2,
+				"@type": "Service",
 				"name": "Pranie tapicerki meblowej",
-				"item": "https://cleantapi.pl/pranie-tapicerki-meblowej-wroclaw.html"
+				"serviceType": "Czyszczenie i pranie tapicerki meblowej",
+				"description": "Profesjonalne pranie tapicerki meblowej: usuwanie plam, kurzu, alergenów i nieprzyjemnych zapachów. Bezpieczne środki, szybkie schnięcie, obsługa we Wrocławiu i okolicach.",
+				"areaServed": [
+					{ "@type": "City", "name": "Wrocław" },
+					{ "@type": "City", "name": "Jelcz-Laskowice" },
+					{ "@type": "City", "name": "Oleśnica" },
+					{ "@type": "City", "name": "Brzeg" },
+					{ "@type": "City", "name": "Oława" }
+				],
+				"provider": {
+					"@type": ["LocalBusiness", "CleaningService"],
+					"name": "Cleantapi",
+					"url": "https://cleantapi.pl",
+					"telephone": "+48 575 256 496",
+					"email": "norovvitalikjaegarn@gmail.com",
+					"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Wrocław",
+					"addressCountry": "PL"
+					}
+				},
+				"termsOfService": "https://cleantapi.pl/",
+				"availableChannel": {
+					"@type": "ServiceChannel",
+					"servicePhone": {
+					"@type": "ContactPoint",
+					"telephone": "+48 575 256 496",
+					"contactType": "customer service",
+					"areaServed": "PL"
+					}
 				}
-			]
-			},
-			{
-			"@type": "Service",
-			"name": "Pranie tapicerki meblowej",
-			"serviceType": "Czyszczenie i pranie tapicerki meblowej",
-			"description": "Profesjonalne pranie tapicerki meblowej: usuwanie plam, kurzu, alergenów i nieprzyjemnych zapachów. Bezpieczne środki, szybkie schnięcie, obsługa we Wrocławiu i okolicach.",
-			"areaServed": [
-				{ "@type": "City", "name": "Wrocław" },
-				{ "@type": "City", "name": "Jelcz-Laskowice" },
-				{ "@type": "City", "name": "Oleśnica" },
-				{ "@type": "City", "name": "Brzeg" },
-				{ "@type": "City", "name": "Oława" }
+				},
+				{
+				"@type": "FAQPage",
+				"mainEntity": [
+					{
+					"@type": "Question",
+					"name": "Jak często należy prać tapicerkę meblową w domu?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Tapicerkę zaleca się prać co 6–12 miesięcy, w zależności od intensywności użytkowania i obecności dzieci lub zwierząt w domu."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Czy pranie kanapy usuwa roztocza i alergeny?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Tak, profesjonalne pranie skutecznie usuwa roztocza, kurz i alergeny, poprawiając jakość powietrza w pomieszczeniu."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Ile czasu schnie tapicerka po profesjonalnym czyszczeniu?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Zwykle proces schnięcia trwa od 4 do 8 godzin, w zależności od rodzaju materiału i wentylacji pomieszczenia, lub skorzystaj z usługi suszenia."
+					}
+					},
+					{
+					"@type": "Question",
+					"name": "Czy wszystkie plamy da się całkowicie usunąć?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Większość świeżych i typowych zabrudzeń można usunąć, jednak stare i głęboko wchłonięte plamy mogą pozostać mniej widoczne, ale nie zawsze znikają całkowicie."
+					}
+					}
+				]
+				}
 			],
-			"provider": {
-				"@type": ["LocalBusiness", "CleaningService"],
-				"name": "Cleantapi",
-				"url": "https://cleantapi.pl",
-				"telephone": "+48 575 256 496",
-				"email": "norovvitalikjaegarn@gmail.com",
-				"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Wrocław",
-				"addressCountry": "PL"
-				}
-			},
-			"termsOfService": "https://cleantapi.pl/",
-			"availableChannel": {
-				"@type": "ServiceChannel",
-				"servicePhone": {
-				"@type": "ContactPoint",
-				"telephone": "+48 575 256 496",
-				"contactType": "customer service",
-				"areaServed": "PL"
-				}
-			}
-			},
-			{
-			"@type": "FAQPage",
-			"mainEntity": [
-				{
-				"@type": "Question",
-				"name": "Jak często należy prać tapicerkę meblową w domu?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "Tapicerkę zaleca się prać co 6–12 miesięcy, w zależności od intensywności użytkowania i obecności dzieci lub zwierząt w domu."
-				}
-				},
-				{
-				"@type": "Question",
-				"name": "Czy pranie kanapy usuwa roztocza i alergeny?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "Tak, profesjonalne pranie skutecznie usuwa roztocza, kurz i alergeny, poprawiając jakość powietrza w pomieszczeniu."
-				}
-				},
-				{
-				"@type": "Question",
-				"name": "Ile czasu schnie tapicerka po profesjonalnym czyszczeniu?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "Zwykle proces schnięcia trwa od 4 do 8 godzin, w zależności od rodzaju materiału i wentylacji pomieszczenia, lub skorzystaj z usługi suszenia."
-				}
-				},
-				{
-				"@type": "Question",
-				"name": "Czy wszystkie plamy da się całkowicie usunąć?",
-				"acceptedAnswer": {
-					"@type": "Answer",
-					"text": "Większość świeżych i typowych zabrudzeń można usunąć, jednak stare i głęboko wchłonięte plamy mogą pozostać mniej widoczne, ale nie zawsze znikają całkowicie."
-				}
-				}
+			"sameAs": [
+				"https://www.facebook.com/Cleantapi/",
+				"https://vm.tiktok.com/ZMNuDPJg2/",
+				"https://share.google/zuCkGNo8izLHwAEiC"
 			]
-			}
-		],
-		"sameAs": [
-			"https://www.facebook.com/Cleantapi/",
-			"https://vm.tiktok.com/ZMNuDPJg2/",
-			"https://share.google/zuCkGNo8izLHwAEiC"
-		]
 		}
 
 
@@ -120,7 +120,7 @@ append head
 append content
 	script. 
 		const initialCategory = 0;
-	include components/header-2
+	include components/header/header-2
 	main
 		include components/promo/promo-furniture
 		include components/price/price
@@ -129,7 +129,7 @@ append content
 		include components/cta
 		include components/works/works-furniture
 		include components/faq/faq-furniture
-		include components/contacts
+		include components/contacts/contacts
 		include components/popup
 		include components/icons
 	include components/footer

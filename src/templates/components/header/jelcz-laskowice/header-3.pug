@@ -1,0 +1,50 @@
+header.header
+	.container 
+		.header__inner
+			.header__logo 
+				a.link(href="./jelcz-laskowice.html")
+					include ../../logo
+			.header__menu#main-menu 
+				nav.menu 
+					.menu__item
+						a.menu__link(href="./jelcz-laskowice.html") Główna
+					.menu__item
+						a.menu__link(href="#") Usługi
+						nav.menu 
+							.menu__item
+								a.menu__link(href="./pranie-tapicerki-meblowej-jelcz-laskowice.html") Pranie tapicerki meblowej
+							.menu__item
+								a.menu__link(href="./pranie-materacy-jelcz-laskowice.html") Pranie materacy
+							.menu__item
+								a.menu__link(href="./pranie-dywanow-jelcz-laskowice.html") Pranie dywanow
+							.menu__item
+								a.menu__link(href="./pranie-tapicerki-samochodowej-jelcz-laskowice.html") Pranie tapicerki samochodowej
+					.menu__item
+						a.menu__link(href="https://cleantapi-course.netlify.app/", target="_blank") Kurs
+				.header__menu-socials.text-center
+					include ../../socials/jelcz-laskowice/socials
+				.header__menu-btn.text-center
+					a.btn.btn-third.btn-small.btn-rhombus(href="tel:+48575256496") 
+						span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+						span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+						span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+						span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+						svg.icon.icon-right.shake(width="16" height="16")
+							use(href="#tel")
+						| Zadzwoń
+			.header__button
+				a.btn.btn-third.btn-small.btn-rhombus(href="tel:+48575256496") 
+					span.triangle.triangle-extra-small.triangle-135.top-inner.left-inner.bordered
+					span.triangle.triangle-extra-small.triangle-45.top-inner.right-inner.bordered
+					span.triangle.triangle-extra-small.triangle-225.bottom-inner.left-inner.bordered
+					span.triangle.triangle-extra-small.triangle-315.bottom-inner.right-inner.bordered
+					svg.icon.icon-right.shake(width="16" height="16")
+						use(href="#tel")
+					| Zadzwoń
+			.header__burger
+				button.js-burger.btn.btn-transparent(type="button" aria-expanded="false" aria-controls="main-menu")
+					span.sr-only Otwórz menu mobilne
+					span.cross 
+						span 
+						span
+						span

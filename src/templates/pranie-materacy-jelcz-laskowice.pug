@@ -1,0 +1,137 @@
+extends settings/layout
+
+prepend html
+	- const lang = "pl";
+
+prepend head
+	- const pageTitle = "Pranie materacy — usuwanie plam, potu i zapachów | Jelcz-laskowice | Cleantapi"
+	- const pageDescription = "Pranie materacy we Wrocławiu, Jelcz‑Laskowicach, Oleśnicy, Brzegu i Oławie. Usuwamy plamy, pot, roztocza i nieprzyjemne zapachy. Bezpieczne dla alergików. Zadzwoń: +48 575 256 496"
+	- const pageKeywords = "pranie materacy Jelcz-laskowice, czyszczenie materacy Jelcz-laskowice, usuwanie plam z materacy Jelcz-laskowice, dezynfekcja materaca Jelcz-laskowice, pranie materacy dla alergików Jelcz-laskowice, czyszczenie łóżek Jelcz-laskowice"
+	- const pageUrl = "pranie-materacy-jelcz-laskowice.html"
+	- const pageImage = "img/service-mattress.webp"
+	- const twitterImage = "img/service-mattress.webp"
+	- const themeColor = "#ffffff"
+
+
+append head
+	script(type="application/ld+json").
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Strona główna",
+				"item": "https://cleantapi.pl/jelcz-laskowice.html"
+				},
+				{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Pranie materacy",
+				"item": "https://cleantapi.pl/pranie-materacy-jelcz-laskowice.html"
+				}
+			]
+			},
+			{
+			"@type": "Service",
+			"name": "Pranie materacy",
+			"serviceType": "Czyszczenie i pranie materacy",
+			"description": "Profesjonalne pranie materacy: usuwanie potu, plam, kurzu, roztoczy i zapachów. Bezpieczne dla alergików, szybkie schnięcie, obsługa we Wrocławiu i okolicach.",
+			"areaServed": [
+				{ "@type": "City", "name": "Wrocław" },
+				{ "@type": "City", "name": "Jelcz-Laskowice" },
+				{ "@type": "City", "name": "Oleśnica" },
+				{ "@type": "City", "name": "Brzeg" },
+				{ "@type": "City", "name": "Oława" }
+			],
+			"provider": {
+				"@type": ["LocalBusiness", "CleaningService"],
+				"name": "Cleantapi",
+				"url": "https://cleantapi.pl",
+				"telephone": "+48 575 256 496",
+				"email": "norovvitalikjaegarn@gmail.com",
+				"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Jelcz-Laskowice",
+				"addressCountry": "PL"
+				}
+			},
+			"termsOfService": "https://cleantapi.pl/",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"servicePhone": {
+				"@type": "ContactPoint",
+				"telephone": "+48 575 256 496",
+				"contactType": "customer service",
+				"areaServed": "PL"
+				}
+			}
+			},
+			{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+				"@type": "Question",
+				"name": "Jak często należy czyścić materac?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Zalecamy czyszczenie materaca co 6–12 miesięcy, szczególnie w przypadku alergików, dzieci i zwierząt domowych."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy można usunąć wszystkie plamy i zapachy z materaca?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Większość plam i zapachów można skutecznie usunąć, choć trwałość zabrudzenia i wcześniejsze próby czyszczenia mogą wpływać na efekt końcowy."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Czy czyszczenie materaca jest bezpieczne dla alergików?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Tak. Używamy hipoalergicznych środków czyszczących oraz usuwamy roztocza i kurz, co sprzyja poprawie jakości snu i zdrowia."
+				}
+				},
+				{
+				"@type": "Question",
+				"name": "Ile trwa schnięcie materaca po praniu?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Zwykle 6–12 godzin w dobrze wentylowanym pomieszczeniu. Dodatkowo oferujemy usługę suszenia, dzięki której po zakończeniu pracy i wyjeździe naszego specjalisty wszystkie czyszczone powierzchnie pozostają suche i gotowe do użytku."
+				}
+				}
+			]
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/Cleantapi/",
+			"https://vm.tiktok.com/ZMNuDPJg2/",
+			"https://g.co/kgs/vs8CZY"
+		]
+		}
+
+
+
+append content
+	script. 
+		const initialCategory = 1;
+	include components/header/jelcz-laskowice/header-2
+	main
+		include components/promo/jelcz-laskowice/promo-mattress
+		include components/price/jelcz-laskowice/price
+		include components/how
+		include components/reviews/jelcz-laskowice/reviews-mattress
+		include components/cta
+		include components/works/jelcz-laskowice/works-mattress
+		include components/faq/faq-mattress
+		include components/contacts/jelcz-laskowice/contacts
+		include components/popup
+		include components/icons
+	include components/footer
+
+append scripts

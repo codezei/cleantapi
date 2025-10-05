@@ -55,10 +55,12 @@
       line-height: 1.5;
       font-size: 0.9em;
       transition: all 400ms;
+      position: relative;
     }
     &__text:has(~ .review__toggle):not(.active) &__img {
       display: none;
     }
+
     &__text:has(~ .review__toggle):not(.active) {
       overflow: hidden;
       display: -webkit-box;
